@@ -1,0 +1,274 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --res: calc(0.1 * 1vmin);
+}
+
+body {
+  background-color: rgba(229, 232, 238, 0.368);
+  
+  background-image: url('./image.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 10vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+}
+
+.head-wrapper img {
+  width: max(calc(105 * var(--res)), 106px);
+}
+
+.combo {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.combo h1 {
+  font-size: max(calc(23 * var(--res)), 25px);
+}
+
+.follow {
+  background-color: #dde7ee;
+  border-radius: 16px;
+  color: #1e1d34;
+  width: 30%;
+  max-width: 140px;
+  min-width: 85px;
+  justify-content: center;
+  gap: 1vmin;
+  cursor: pointer;
+  align-items: center;
+  height: 35%;
+  display: flex;
+}
+
+.follow h6 {
+  font-size: max(calc(11 * var(--res)), 15px);
+  text-align: start;
+}
+
+.follow img {
+  width: max(calc(20 * var(--res)), 15px);
+}
+.wrap {
+  min-height: 40vmin;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+
+}
+
+.launching {
+  width: 20%;
+  min-width: 150px;
+  height: 17%;
+  min-height: 42px;
+  display: flex;
+  background: hsla(186, 46%, 60%, 0.23);
+  border-radius: 16px;
+  color: #02227a;
+  justify-content: center;
+  align-items: center;
+}
+
+.launching ul li {
+  font-size: max(calc(13 * var(--res)), 15px);
+}
+
+.Title {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title h1 {
+  font-size: max(calc(33 * var(--res)), 20px);
+}
+.paragraph {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.paragraph p {
+  font-size: max(calc(13 * var(--res)), 10px);
+}
+
+.bouton {
+  display: flex;
+  width: 20%;
+  height: 15%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton button {
+  background-color: #6ca3c8;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: max(calc(14 * var(--res)), 11px);
+  font-weight: 700;
+  width: max(calc(115 * var(--res)), 106px);
+  min-width: 80px;
+  height: max(calc(35 * var(--res)), 46px);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .head-wrapper {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .launching {
+    width: 30%;
+    min-width: 150px;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .follow {
+    width: 25%;
+    max-width: 140px;
+    min-width: 40px;
+    gap: 1vmin;
+    height: 35%;
+  }
+
+  .follow h6 {
+    font-size: max(calc(11 * var(--res)), 10px);
+    text-align: start;
+  }
+
+  .follow img {
+    width: max(calc(20 * var(--res)), 15px);
+  }
+
+  .launching ul li {
+    font-size: max(calc(13 * var(--res)), 14px);
+    font-weight: 600;
+  }
+
+  .combo {
+    width: 60%;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .head-wrapper .combo h1 {
+    font-size: max(calc(17 * var(--res)) 35px);
+  }
+
+  .paragraph {
+    width: 80%;
+    height: 18%;
+  }
+
+  .paragraph p {
+    font-size: max(calc(13 * var(--res)), 18px);
+    text-align: center;
+  }
+
+  .Title {
+    width: 100%;
+    height: 25%;
+  }
+
+  .Title h1 {
+    font-size: max(calc(33 * var(--res)), 30px);
+    text-align: center;
+  }
+
+  .bouton button {
+    font-size: max(calc(28 * var(--res)), 20px);
+    height: max(calc(35 * var(--res)), 46px);
+    width: 100%;
+  }
+
+  .bouton {
+    width: 75%;
+    height: 15%;
+  }
+
+  .follow {
+    width: 50%;
+    max-width: 140px;
+    min-width: 85px;
+    height: 45%;
+  }
+
+  .follow h6 {
+    font-size: max(calc(11 * var(--res)), 17px);
+    text-align: start;
+  }
+
+  .follow img {
+    width: max(calc(20 * var(--res)), 15px);
+  }
+}
+
+@media (max-width: 361px) {
+  .Title {
+    width: 98%;
+  }
+}
